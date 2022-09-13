@@ -54,3 +54,9 @@ Describe "Hub CLI" {
         "hub --version" | Should -ReturnZeroExitCode
     }
 }
+
+Describe "Eksctl CLI" {
+    It "Eksctl is installed" {
+        "eksctl version" | Should -ReturnZeroExitCode
+    }
+}

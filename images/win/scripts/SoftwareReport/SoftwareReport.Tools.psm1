@@ -307,3 +307,8 @@ function Get-SwigVersion {
     $swigVersion = $Matches.Version
     return "Swig $swigVersion"
 }
+
+function Get-EksctlVersion {
+    $eksctlversion = eksctl version
+    return $eksctlversion
+}
