@@ -150,3 +150,9 @@ Describe "CodeQL" -Skip:($os.IsCatalina) {
         $CodeQLPacksPath | Should -Exist
     }
 }
+
+Describe "Eksctl CLI" {
+    It "Eksctl is installed" {
+        "eksctl version" | Should -ReturnZeroExitCode
+    }
+}
