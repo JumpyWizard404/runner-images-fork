@@ -597,3 +597,8 @@ function Get-CodeQLBundleVersion {
     $CodeQLVersion = & $CodeQLPath version --quiet
     return "CodeQL Action Bundle $CodeQLVersion"
 }
+
+function Get-EksctlVersion {
+    $eksctlversion = Run-Command "eksctl version"
+    return "eksctl version $eksctlversion"
+}
